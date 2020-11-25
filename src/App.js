@@ -7,6 +7,19 @@ class App extends Component {
 
   }
 
+  componentDidMount(){
+    console.log("component rendered");
+  }
+
+  componentDidUpdate(){
+    console.log("I just updated");
+  }
+
+  componentWillUnmount(){
+    console.log("what the Fu....?");
+  }
+
+ 
 
   state={
     count: 0
@@ -25,6 +38,8 @@ class App extends Component {
   }
 
   render() {
+
+    console.log("I'm rendering");
     return (
       <div>
 
