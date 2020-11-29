@@ -23,8 +23,11 @@ class App extends Component {
         }
       }
     }=await axios.get("https://yts-proxy.now.sh/list_movies.json");
+
     console.log(movies);
+
     this.setState({movies:movies, isLoading:false});
+
   }
 
   componentDidMount() {
@@ -34,11 +37,11 @@ class App extends Component {
   render() {
     const {isLoading, movies}=this.state;
     return (
-      <section class="container">
+      <section className="container">
       
         { isLoading ?  <div class="loader">
 
-          <span class="loader__text">loading...</span>
+          <span className="loader__text">loading...</span>
 
         </div> : movies.map(movie=>(
 
@@ -47,7 +50,8 @@ class App extends Component {
            year={movie.year} 
            title={movie.title}
            summary={movie.summary}
-          poster={movie.medium_cover_image}>
+          poster={movie.medium_cover_image}
+          genres={movie.genres}>
           </Movie>
 
         ))}
