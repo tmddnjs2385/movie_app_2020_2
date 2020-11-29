@@ -39,7 +39,7 @@ class App extends Component {
     return (
       <section className="container">
       
-        { isLoading ?  <div class="loader">
+        { isLoading ?  <div className="loader">
 
           <span className="loader__text">loading...</span>
 
