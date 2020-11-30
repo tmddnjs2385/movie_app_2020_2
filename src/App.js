@@ -5,9 +5,7 @@ import axios from "axios";
 import "./App.css"
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
+ 
 
   state={
     isLoading: true,
@@ -55,8 +53,5 @@ class App extends Component {
   }
 }
 
-App.propTypes = {
-
-};
 
 export default App;
