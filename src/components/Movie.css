@@ -2,8 +2,8 @@
   width: 45%;
   background-color: white;
   margin-bottom: 70px;
- 
-  font-weight: 300;
+
+  font-weight: 301;
   padding: 20px;
   border-radius: 5px;
   color: #adaeb9;
@@ -12,7 +12,7 @@
 }
 
 
-.movies .movie a{
+.movies .movie a {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -30,7 +30,8 @@
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 
-.movie .movie__title, .movie .movie__year {
+.movie .movie__title,
+.movie .movie__year {
   margin: 0;
   font-weight: 300;
 }
@@ -49,7 +50,8 @@
   margin: 5px 0px;
 }
 
-.movie__genres li, .movie .movie__year {
+.movie__genres li,
+.movie .movie__year {
   margin-right: 10px;
   font-size: 14px;
 }
